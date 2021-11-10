@@ -223,16 +223,17 @@
 		<script src="assets/js/util.js"></script>
 		<script src="assets/js/main.js"></script>
 		<script>
-			setTimeout(function() {
-				// autoplays the first animation in the default artboard
-				const adrianbanner = new rive.Rive({
-					src: './assets/rive/adrian.riv',
-					canvas: document.getElementById('bannercanvas'),
-					autoplay: false,
-				});
-				adrianbanner.play();
-			}, 1000);
-			
+			window.onload = function() {
+				setTimeout(function() {
+					// autoplays the first animation in the default artboard
+					const adrianbanner = new rive.Rive({
+						src: './assets/rive/adrian.riv',
+						canvas: document.getElementById('bannercanvas'),
+						autoplay: false,
+					});
+					adrianbanner.play();
+				}, 1000);
+			};
 		</script>
 	</body>
 </html>
